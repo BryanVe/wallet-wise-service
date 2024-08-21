@@ -1,10 +1,12 @@
 export const responseBuilder = {
-	success: <T>(data: T) => ({
+	success: <T>(message: string, data?: T) => ({
 		success: true,
+		message,
 		data,
 	}),
-	error: <T>(data: T) => ({
+	error: <T>(message: string, data?: T) => ({
 		success: false,
+		message,
 		data,
 	}),
 }
