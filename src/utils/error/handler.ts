@@ -9,6 +9,7 @@ type ErrorHandler = (
 ) => void
 
 export const errorHandler: ErrorHandler = (err, _, res) => {
+	console.log(err)
 	if (err instanceof HttpError)
 		return res
 			.status(err.code)

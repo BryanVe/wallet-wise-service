@@ -8,4 +8,8 @@ export const USER_MESSAGES = {
 	LAST_NAME_MIN_LENGTH: 'Last name must be at least 1 character',
 	INVALID_USER_DATA: 'Invalid user data',
 	REGISTERED_USER: 'User registered successfully',
+	FOUND_USERS: 'Users found successfully',
+	FOUND_USER: 'User found successfully',
+	USER_ID_REQUIRED: 'User ID is required',
+	USER_NOT_FOUND: 'User not found',
 } as const

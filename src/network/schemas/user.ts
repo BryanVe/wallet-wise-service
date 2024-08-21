@@ -23,5 +23,3 @@ export const registerUserDto = z.object({
 		})
 		.min(1, USER_MESSAGES.LAST_NAME_MIN_LENGTH),
 })
-
-export type RegisterUserDto = z.infer<typeof registerUserDto>
